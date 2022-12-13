@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- <link rel="stylesheet" href="">-->
+</head>
+
+<body>
+    <form action="action_page.php">
+        <div class="container">
+            <table align="center">
+                <!--username-->
+                <tr>
+                    <td>
+                        Username
+                    </td>
+                    <td>
+                        <input type="text" name="Username" placeholder="Username" maxlength="10">
+                    </td>
+                </tr>
+                <!--firstname-->
+                <tr>
+                    <td>
+                        First Name
+                    </td>
+                    <td>
+                        <input type="text" name="FirstName" placeholder="Firstname" maxlength="10">
+                    </td>
+                </tr>
+                <!--lastname-->
+                <tr>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        <input type="text" name="LastName" placeholder="Lastname" maxlength="10">
+                    </td>
+                </tr>
+                <!--password-->
+                <tr>
+                    <td>
+                        Password
+                    </td>
+                    <td>
+                        <input type="password" name="Password" placeholder="Password" maxlength="8">
+                        (max 8 alphanumeric characters)
+                    </td>
+                </tr>
+                <!--gender -->
+                <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                    </td>
+                </tr>
+                <!--birthday-->
+                <tr>
+                    <td>
+                        Birthday:
+                    </td>
+                    <td>
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday">
+                    </td>
+                </tr>
+                <!--email-->
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input type="email" name="Email" placeholder="Email">
+                    </td>
+                </tr>
+                <!--phone-->
+                <tr>
+                    <td>
+                        Phone:
+                    </td>
+                    <td>
+                        <input type="tel" name="Phone" placeholder="Phone">
+                    </td>
+                </tr>
+                <!--address-->
+                <tr>
+                    <td>
+                        Address:
+                    </td>
+                    <td>
+                        <textarea name="Address" placeholder="Address" rows="4" cols="30"></textarea>
+                    </td>
+                </tr>
+                <!--Qualifications-->
+                <tr>
+                    <td>
+                        <label for="Qualification">Qualification:</label>
+                        <select name="Qualification">
+                            <option value="">Select Qualification</option>
+                            <option value="1">Software Engineering</option>
+                            <option value="2">Mechanical Engineering</option>
+                            <option value="3">Civil Engineering</option>
+                            <option value="4">Aritfical Intellegience</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Qualification">Degree:</label>
+                        <select name="Degree">
+                            <option value="">Select Degree</option>
+                            <option value="1">BSc</option>
+                            <option value="2">MSc</option>
+                            <option value="3">B.E</option>
+                            <option value="4">Diploma</option>
+                            <option value="5">PhD</option>
+                        </select>
+                    </td>
+                </tr>
+                <div class="container">
+                    <!--buttons---->
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <button type="submit" class="btn btn-primary">Register</button></b>
+                                <button type="reset" class="btn btn-primary">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>
