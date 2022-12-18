@@ -1,43 +1,56 @@
-/* Add a black background color to the top navigation */
+/* 
+home style
+*/
 
-* {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/*
+body background
+*/
 body {
-    background-color: #393f5f;
-    background: rgb(255, 151, 96);
+background-color: #393f5f;
+background: rgb(255, 151, 96);
     background: linear-gradient(111deg, rgba(255, 151, 96, 1) 0%, rgba(57, 63, 95, 1) 100%);
 
 }
 
+/*
+nav bar styling
+*/
 .topnav {
     min-height: 8vh;
     overflow: hidden;
     width: 100%;
     background-color: #ffe69d;
-    justify-content: space-around;
+    justify-content:space-around ;
     align-items: center;
 }
 
-h2 {
+/*
+text styling
+*/
+h2{
     text-align: right;
-    font-size: 40px;
+    font-size: 40px ;
     text-transform: uppercase;
     padding-top: 3px;
     min-height: 8vh;
     padding-right: 15px;
-    font-family: Andale Mono,
+    font-family:Andale Mono,
         AndaleMono,
-        monospace;
-    color: #ff9760;
+        monospace ;
+    color:#393f5f;
     font-weight: bolder;
     letter-spacing: 5px;
 }
 
-/* Style the links inside the navigation bar */
+/*
+links
+*/
 .topnav a {
     float: left;
     color: #6a7e6a;
@@ -46,22 +59,15 @@ h2 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-weight: bolder;
-    ;
+    font-weight: bolder;;
     font-family: Andale Mono,
         AndaleMono,
         monospace;
     letter-spacing: 3px;
 }
 
-/* Change the color of links on hover */
+/* hover links */
 .topnav a:hover {
     background-color: #e96d5e;
-    color: #393f5f;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #ff9760;
     color: #393f5f;
 }

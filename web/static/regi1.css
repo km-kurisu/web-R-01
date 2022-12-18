@@ -57,8 +57,10 @@ input[type=checkbox] {
     border: 0px solid #ddd;
     border-radius: 15px;
     box-sizing: border-box;
-    display: flex;
+    display: inline-block;
     align-items: center;
+    padding: 15px 30px;
+    margin: 20px;
     justify-content: center;
     background-color: #393f5f;
     font-size: largerr;
@@ -116,7 +118,7 @@ textarea {
     background-color: #393f5f;
     font-size: 16px;
     resize: none;
-    color: #393f5f;
+    color: #ff9760;
     font-family: Andale Mono,
         AndaleMono,
         monospace;
@@ -125,10 +127,11 @@ textarea {
 }
 
 textarea:focus {
-    border-radius: 20px;
+    border-radius: 10px;
     box-sizing: border-box;
     background-color: #ff9760;
-    font-size: 18px;
+    font-size: 16px;
+    color: #393f5f;
 }
 
 textarea:focus:active {
@@ -144,8 +147,8 @@ label {
     font-family: Andale Mono,
         AndaleMono,
         monospace;
-    padding: 15px;
-    display: flex;
+    padding: 15px 30px;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -160,10 +163,10 @@ select {
     font-size: 16px;
     font-weight: bold;
     color: #6a7e6a;
-    padding: 15px;
+    padding: 15px 30px;
     text-align: justify;
     box-sizing: border-box;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
 }
@@ -198,7 +201,7 @@ button {
     border-radius: 18px;
     opacity: 0.7;
     transition: 0.3s;
-    display: flex;
+    display: inline-block;
     font-weight: bold;
     align-items: center;
     justify-content: center;
@@ -221,17 +224,10 @@ button:active {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button:focus {
-    background-color: #e96d5e;
-    opacity: 1;
-    border-radius: 18px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
 .sub {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: inline-block;
 }
