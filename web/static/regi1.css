@@ -63,7 +63,7 @@ input[type=checkbox] {
     margin: 20px;
     justify-content: center;
     background-color: #393f5f;
-    font-size: largerr;
+    font-size: large;
 }
 
 input[type=checkbox]:checked {
