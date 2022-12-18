@@ -50,10 +50,15 @@ app.get("/find", async (req, res) => {
 
 app.post("/create", async (req, res) => {
     const body = Object.keys(req.body)?req.body:req.params
+    if(!body) {
+        res.redirect("/register")
+    }
+    if(!body._id && body.username) {
+        body._id = body.username
+    }
+    console.log(body)
     if(await User.findById(body._id)) {
-        res.status(400).send({
-            error: "The username already exists"
-        })
+        req.redirect("/register")
         return
     }
     const user = await new User(body).save()

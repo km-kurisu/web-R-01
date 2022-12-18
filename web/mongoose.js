@@ -16,19 +16,6 @@ export default model("user", new Schema({
     mobile: String,
     gender: String,
     address: String,
-    city: String,
-    pinCode: Number,
-    state: String,
-    country: {
-        type: String,
-        default: "India"
-    },
-    hobbies: [String],
-    qualification: [{
-        name: String,
-        board: String,
-        percentage: Number,
-        year: Number
-    }],
-    courses: [String]
+    qualification: String,
+    degree: String
 }))
